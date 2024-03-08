@@ -14,7 +14,7 @@ int binomialCoefficient(int n, int r) {
 }
 
 // Function to display Pascal's Triangle
-void displayPascalsTriangle(int numRows) {
+void Pascal(int numRows) {
     for (int i = 0; i < numRows; i++) {
         for (int j = 0; j <= i; j++) {
             cout << binomialCoefficient(i, j) << " ";
@@ -30,7 +30,7 @@ int main() {
     cin >> numRows;
 
     // Display Pascal's Triangle
-    displayPascalsTriangle(numRows);
+    Pascal(numRows);
 
     return 0;
 }
